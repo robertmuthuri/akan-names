@@ -12,7 +12,6 @@ This is a fun website that helps you determine your Akan name based on the date 
 * Bootstrap.
 * Markdown.
 
-
 ## Link to GitHub Pages
 * https://robertmuthuri.github.io/akan-names/
 
