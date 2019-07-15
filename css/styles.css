@@ -4,7 +4,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: bisque;
-  
 }
 .overlay{
   background-color: rgba(204, 0, 0, 0.041);
@@ -32,4 +31,13 @@ padding-top: 150px;
 
 .row {
   padding: 50px;
+}
+
+.navigate{
+  background-color: rgba(0,0,0,0.5);
+  height: 80px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
 }
