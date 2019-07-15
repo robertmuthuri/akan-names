@@ -7,6 +7,10 @@ function dateOfWeek() {
   var DD = parseInt(dateOfBirth.substring(8,10));
 
   d = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (5 + 1) / 10)) + 9) % 7;
+
+  function validate() {
+    ("datepicker").datepicker({maxDate: today});
+  }
   // alert(document.getElementById("akanOutput").innerHTML = d);
 
   day = Math.floor(d)-1;
