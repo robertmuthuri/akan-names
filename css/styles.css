@@ -1,4 +1,9 @@
 body {
   font-family: avenir;
+  background-image:url("../images/akan-people.jpg");
+}
 
+img {
+  float: right;
+  width: 400px;
 }
