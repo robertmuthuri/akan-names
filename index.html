@@ -21,26 +21,56 @@
           <div class="row">
             <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
             <div class="<col-sm-10">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" id="maleGender" value="option1" unchecked>
-                <label class="form-check-label" for="maleGender">
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="maleGender" value="option1" name="custom-radio">
+                <label class="custom-control-label" for="maleGender">
                   Male
                 </label>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" id="femaleGender" value="option2">
-                <label class="form-check-label" for="femaleGender">
-                  Female
-                </label>
-              </div>
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" id="femaleGender" value="option2" name="custom-radio">
+              <label class="custom-control-label"" for="femaleGender">
+                Female
+              </label>
             </div>
           </div>
         </fieldset>
+        <button type="button" class="btn btn-primary" id="button1" onclick="dateOfWeek();">Submit</button>
       </form>
-      <button onclick="akanName(this.id)" id="buttonOne">Find out your Akan name!</button>
-      <p id="akanOutput">Your Akan name is</p>
-      <link src="js/scripts.js">
-
+      <p id="akanOutput"></p>
     </div>
+    <link href="js/scripts.js">
+
+    <script>
+      function dateOfWeek() {
+        var dateOfBirth = document.getElementById("dateOfBirth").value;
+        var CC = dateOfBirth.substring(0,2);
+        var YY = dateOfBirth.substring(2,4);
+        var MM = dateOfBirth.substring(5,7);
+        var DD = dateOfBirth.substring(8,10);
+
+        d = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (5 + 1) / 10)) + 9) % 7;
+        // alert(document.getElementById("akanOutput").innerHTML = d);
+
+        dayOfBirth = Math.floor(d)-1;
+
+        daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        // alert(document.getElementById("akanOutput").innerHTML = daysOfTheWeek[dayOfBirth]);
+
+        var option = document.getElementsByName('name').value;
+        var femaleGender = document.getElementById("femaleGender").value;
+
+        var akanMales = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+        var akanFemales = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+        if (option == 'option1') {
+          document.getElementById("akanOutput").innerHTML = "You were born on " + daysOfTheWeek[dayOfBirth] + " and your Akan name would be " + akanMales[dayOfBirth];
+        }
+        else {
+          document.getElementById("akanOutput").innerHTML = "You were born on " + daysOfTheWeek[dayOfBirth] + " and your Akan name would be " + akanFemales[dayOfBirth];
+        }
+  }
+</script>
   </body>
 </html>
