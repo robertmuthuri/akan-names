@@ -1,9 +1,35 @@
 body {
-  font-family: avenir;
+  font-family: avenir,serif;
   background-image:url("../images/akan-people.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: bisque;
+  
+}
+.overlay{
+  background-color: rgba(204, 0, 0, 0.041);
+  height: 500px;
 }
 
 img {
   float: right;
   width: 400px;
+  /* opacity: 0.2; */
+  /* background-color: rgba(204, 0, 0, 0.027); */
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.788);
+  /* opacity:  rgba(204, 0, 0, 0.041); */
+  height: 600px;
+}
+
+#form1 {
+padding: 50px;
+padding-top: 150px;
+
+}
+
+.row {
+  padding: 50px;
 }

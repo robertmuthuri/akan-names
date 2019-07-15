@@ -6,6 +6,13 @@ This is a fun website that helps you determine your Akan name based on the date 
 ## Setup/Installation Requirements
 * There are no set up requirements for this website.
 
+## Technologies Used
+* Javascript.
+* HTML.
+* Bootstrap.
+* Markdown.
+
+
 ## Link to GitHub Pages
 * https://robertmuthuri.github.io/akan-names/
 
