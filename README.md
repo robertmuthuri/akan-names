@@ -12,6 +12,10 @@ This is a fun website that helps you determine your Akan name based on the date 
 * Bootstrap.
 * Markdown.
 
+## Known Bugs
+* The datepicker vadidate function does not work well. 
+* Some dates return undefined results. 
+
 ## Link to GitHub Pages
 * https://robertmuthuri.github.io/akan-names/
 

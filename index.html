@@ -7,24 +7,27 @@
     <title>Akan-Name</title>
   </head>
   <body>
-    <div class="navigate">
-        <h1>Learn your Akan Name</h1>
-        <!-- <img src="images/akan-people.jpg" alt="Akan traditional ceremony."> -->
-        
-    </div>  
-    <div class="container">
-        <p id="para1">This application allows you to determine your Akan name by choosing your birtday on the calendar picker.</p> 
-      <form id="form1">
-        <div class="form-group-row">
-          <label for="dateOfBirth" class="col-sm-4" col-form-label>Enter your birthday</label>
-          <div class="col-sm-10">
-            <input type="date" class="form-control" id="dateOfBirth">
-          </div>
-        </div>
+    <div class="wrapper">
+      <div class="my-container">
+
+        <div class="navigate">
+          <h1>Learn your Akan Name</h1>
+          <!-- <img src="images/akan-people.jpg" alt="Akan traditional ceremony."> -->
+          
+        </div>  
+        <div class="container">
+          <p id="para1">This application allows you to determine your Akan name by choosing your birthday on the calendar picker.</p> 
+          <form id="form1">
+            <div class="form-group row">
+              <label for="dateOfBirth" class="col-sm-3" col-form-label>Enter your birthday</label>
+              <div class="col-sm-9">
+                <input type="date" class="form-control" id="dateOfBirth">
+              </div>
+            </div>
         <fieldset class="form-group">
           <div class="row">
-            <legend class="col-form-label col-sm-2 pt-0">Choose your gender</legend>
-            <div class="col-sm-10">
+            <legend class="col-form-label col-sm-3 pt-0">Choose your gender</legend>
+            <div class="col-sm-9">
               <div class="custom-control custom-radio">
                 <input class="custom-control-input" type="radio" id="maleGender" value="option1" name="custom-radio">
                 <label class="custom-control-label" for="maleGender">
@@ -34,17 +37,19 @@
               <div class="custom-control custom-radio">
                 <input class="custom-control-input" type="radio" id="femaleGender" value="option2" name="custom-radio">
                 <label class="custom-control-label" for="femaleGender">
-                Female
+                  Female
                 </label>
               </div>
             </div>
           </div>
         </fieldset>
-      <button type="button" class="btn btn-primary" id="button1" onclick="dateOfWeek();">Submit</button>
+        <button type="button" class="btn btn-primary" id="button1" onclick="dateOfWeek();">Submit</button>
       </form>
-      <p id="akanOutput"></p>
+      <p class="output" id="akanOutput"></p>
+      </div>
     </div>
     
-    <script src="js/scripts.js"></script>   
+  </div>
+  <script src="js/scripts.js"></script>   
   </body>
-</html>
+  </html>
